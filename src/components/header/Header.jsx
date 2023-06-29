@@ -11,9 +11,9 @@ const Header = () => {
   return (
   <section>
   <div className='container header_container'>
-    <h5>Hello I'm</h5>
+    <h5>Hello I Am</h5>
     <h1>Abhishek Gour</h1>
-    <h5 className='text-light'>Fullstack Developer</h5>
+    <h5 className='text-light'>Developer</h5>
     <CTA/>
 
     <div className='me'>

@@ -31,7 +31,7 @@ const Contact = () => {
         <BsFacebook className='.contact_option_icon'/>
         <h4>Facebook</h4>
         <h5>Gour Abhishek Patel</h5>
-        <a href='https://www.facebook.com/abhishek.gour.7906'>Send a Message</a>
+        <a href='https://www.facebook.com/abhishek.gour.7906'>Connect</a>
         </article>
 
         <article className='contact_option'>

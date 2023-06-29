@@ -2,6 +2,7 @@ import React from 'react'
 import './about.css'
 import Harda from '../../assests/Harda.jpg'
 import {LiaMedalSolid} from 'react-icons/lia'
+import {PiGraduationCapDuotone} from 'react-icons/pi'
 
 const About = () => {
   return (
@@ -19,35 +20,30 @@ const About = () => {
       
       <div className='about_content'>
         <div className='about_cards'>
-         <article className='about_card'>
-          
-          <LiaMedalSolid className='about_icon'/>
-          <h3>Experience</h3>
-          <h6>1 year Working</h6>
-         
-         </article>
+        
 
          <article className='about_card'>
           
-          <LiaMedalSolid className='about_icon'/>
-          <h3>BTECH</h3>
+          <PiGraduationCapDuotone className='about_icon'/>
+          <h5>BTECH</h5>
           <h6>PIEMR INDORE</h6>
-         
+          <small>Computer Science Current "CGPA 7.4/10" "Pursuing"</small>
          </article>
 
          <article className='about_card'>
           
           <LiaMedalSolid className='about_icon'/>
-          <h3>12TH</h3>
+          <h5>Class XII</h5>
           <h6>Little angel's Convent School Indore</h6>
-         
+          <small>MP Board "73.6%"</small>
          </article>
 
          <article className='about_card'>
           
           <LiaMedalSolid className='about_icon'/>
-          <h3>10TH</h3>
+          <h5>Class X</h5>
           <h6>Sunrays Higher Secondary School Harda</h6>
+          <small>MP Board "70%"</small>
          
          </article>
         </div>
