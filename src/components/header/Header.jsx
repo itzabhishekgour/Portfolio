@@ -24,8 +24,8 @@ const Header = () => {
 
     <div className='social'>
         <a href='https://linkedin.com' target='blank'><BsLinkedin/></a>
-        <a href='https://instagram.com' target='blank'><BsInstagram/></a>
-        <a href='https://github.com' target='blank'><BsGithub/></a>
+        <a href='https://instagram.com/itz_abhi_gour?igshid=MzRlODBiNWFlZA== ' target='blank'><BsInstagram/></a>
+        <a href='https://github.com/itzabhishekgour' target='blank'><BsGithub/></a>
     </div>
     
 
