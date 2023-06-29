@@ -1,0 +1,74 @@
+#footer h5{
+    margin-top: 3rem;
+}
+
+#footer h1{
+    margin-bottom: 3rem;
+}
+
+.exp_container {
+    grid-gap: 2.5rem;
+    align-items: center;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+}
+.exp_item {
+    align-items: flex-start;
+    background: transparent;
+    border: 1px solid transparent;
+    border-color: #151515;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(0deg,transparent,var(--color-primary-variant),transparent);
+    padding: 1.3rem;
+    transition: var(--transition);
+}
+
+.exp_img {
+    background-color: #fff;
+    border-radius: 1.5rem;
+}
+
+.exp_img>img {
+    border-radius: 1.5rem;
+}
+
+.exp_name {
+    align-self: center;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 0.5rem;
+}
+.experience_item>div>a {
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 600px){
+    .exp_container {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .exp_item, .exp_name {
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+}
+@media screen and (max-width: 1024px){
+    .exp_container {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    
+        .exp_item>div>h3 {
+            font-size: small;
+            font-weight: 50;
+            text-align: center;
+        }
+}

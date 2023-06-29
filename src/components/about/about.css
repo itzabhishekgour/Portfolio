@@ -1,0 +1,117 @@
+#about h1{
+    margin-bottom: 3rem;
+}
+
+.about_ha {
+    background: linear-gradient(45deg,transparent,var(--color-primary-variant),transparent);
+    border-radius: 2rem;
+    display: grid;
+    font-size: medium;
+    grid-template-rows: 1fr;
+    padding: 1.5rem;
+    place-items: center;
+}
+
+.about_ha p{
+    margin-top: 2rem;
+}
+
+.about_ha-img h2{
+   display: none;
+}
+.about_ha-img img{
+   border-radius: 2rem;
+   transform: rotateX(-35deg);
+}
+
+.about_ha-img img:hover{
+    transform: rotateX(0deg);
+    border-radius: 2rem;
+ }
+
+.about_container {
+    grid-gap: 15%;
+    display: grid;
+    gap: 15%;
+    grid-template-columns: 35% 50%;
+    text-align: center;
+}
+
+
+.about_container>h1{
+    text-align: center;
+}
+
+.about_cards {
+    grid-gap: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.about_card {
+    background: linear-gradient(var(--color-primary-variant),transparent);
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+.about_card:hover {
+    background: linear-gradient(var(--color-primary),transparent);
+    border-color: var(--color-primary);
+    cursor: default;
+}
+.about_card h5{
+    font-size: 0.9rem;
+}
+
+.about_card small{
+    font-size: 0.7rem;
+    color: var(--color-light);
+}
+
+
+
+/* ===========Medium========= */
+
+@media screen and (max-width: 1024px) {
+    .about_container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about_ha{
+        width: var(--container-width-md);
+        margin: 0 auto 2rem;
+        
+    }
+
+    .about_ha p{
+        margin: 1rem 0 1.5rem;
+    }
+}
+
+/* ==========small============ */
+@media screen and (max-width: 600px) {
+    .about_container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about_ha{
+        width: 65%;
+        margin: 0 auto 2rem;
+        border-radius: 3rem;
+        font-size: 10px;
+    }
+
+    .about_content{
+        text-align: center;
+    }
+
+    .about_ha p{
+        margin: 1.5rem 0 ;
+    }
+}

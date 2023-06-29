@@ -1,0 +1,149 @@
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header_container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+
+.header_container{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+/* ================cta============ */
+
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* ===================social============== */
+.social{
+   
+    justify-content: center;
+   
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1% 1% 1%;
+    scale: 2;
+    margin-bottom: 4rem;
+}
+
+/* ==================img============= */
+
+.me {
+    margin-top: 1px;
+    background: linear-gradient(var(--color-primary-variant),transparent);
+    border-radius: 5rem 5rem;
+    bottom: 1rem;
+    overflow: hidden;
+    padding: .5rem;
+    scale: .5;
+    transform: rotate(0deg);
+}
+
+.me:hover, .me:hover>img {
+
+     transform: rotateY(360deg) rotateZ(180deg);
+ }
+ 
+ .me>img {
+     transition: var(--transition);
+ }
+
+.me::before{
+    content: '';
+	z-index: 0;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 380px;
+	height: 420px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+	animation: animate 6s linear infinite;
+}
+ .me::after 
+{
+	content: '';
+	z-index: 0;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 360px;
+	height: 420px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+	animation: animate 6s linear infinite;
+	animation-delay: -3s;
+}
+@keyframes animate 
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+
+
+
+.me>img {
+    background: linear-gradient(var(--color-primary), transparent);
+    border-radius: 5rem 5rem 5rem 5rem;
+    inset: 1rem;
+    z-index: 2;
+    position: relative;
+}
+.social.linkedin a{
+    background: var(--color-primary);
+}
+
+
+/* ===========================medium=============== */
+
+@media screen and (max-width: 1024px) {
+   
+    
+    .social{
+   
+        justify-content: center;
+       
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 2% 2% 2%;
+        scale: 2;
+        margin-bottom: 4rem;
+    }
+   
+    
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        height: 100vh;
+    }
+
+   
+
+    .me {
+        border-radius: 6rem;
+        scale: .75;
+    }
+}
