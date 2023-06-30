@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.8f52a64f.css",
+    "main.js": "/Portfolio/static/js/main.87ba64b0.js",
+    "static/media/Harda.jpg": "/Portfolio/static/media/Harda.a2aeb2df735ef78c93a8.jpg",
+    "static/media/MoviesSite.jpg": "/Portfolio/static/media/MoviesSite.675f5a3408676e476896.jpg",
+    "static/media/95064821-1656c580-0722-11eb-9169-a239ffb79241.png": "/Portfolio/static/media/95064821-1656c580-0722-11eb-9169-a239ffb79241.858984fc2a66e671d91f.png",
+    "static/media/me.jpg": "/Portfolio/static/media/me.ca16a4728f167d5f09ef.jpg",
+    "static/media/connectMain.jpg": "/Portfolio/static/media/connectMain.464c93a5bf2accbd0d54.jpg",
+    "static/media/InventorySystem.jpg": "/Portfolio/static/media/InventorySystem.c87ed9cfb97ac4ba8e4a.jpg",
+    "static/media/PathFindVis.jpg": "/Portfolio/static/media/PathFindVis.2249099cbd4658371419.jpg",
+    "static/media/connectLogin.jpg": "/Portfolio/static/media/connectLogin.6a2e9f824332ca647ee9.jpg",
+    "index.html": "/Portfolio/index.html",
+    "main.8f52a64f.css.map": "/Portfolio/static/css/main.8f52a64f.css.map",
+    "main.87ba64b0.js.map": "/Portfolio/static/js/main.87ba64b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f52a64f.css",
+    "static/js/main.87ba64b0.js"
+  ]
+}
