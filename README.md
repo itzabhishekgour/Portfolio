@@ -4,7 +4,7 @@ A high-performance, responsive, and beautifully animated developer portfolio. Bu
 
 ---
 
-## 🌟 Visual & Technical Features
+## Visual & Technical Features
 
 - **Cyber-Glassmorphism Theme**: Fully overhauled styling system using modern CSS HSL variables, neon gradient overlays, card glows, and custom floating backgrounds.
 - **Micro-Animations**: Staggered scroll reveals, floating widgets, interactive rating dots, and fluid active-nav pill indicator animations powered by **Framer Motion**.
@@ -14,7 +14,7 @@ A high-performance, responsive, and beautifully animated developer portfolio. Bu
 
 ---
 
-## 🛠️ Tech Stack & Tools
+## Tech Stack & Tools
 
 - **Core Library**: React 18
 - **Build Engine**: Vite 8 (HMR enabled)
@@ -25,7 +25,7 @@ A high-performance, responsive, and beautifully animated developer portfolio. Bu
 
 ---
 
-## 📂 Featured Projects in Portfolio
+## Featured Projects in Portfolio
 
 The portfolio showcases key productions:
 
@@ -36,7 +36,7 @@ The portfolio showcases key productions:
 
 ---
 
-## 🚀 Local Development Setup
+## Local Development Setup
 
 ### Prerequisites
 Make sure you have Node.js (v18 or higher recommended) installed.
@@ -67,7 +67,7 @@ Make sure you have Node.js (v18 or higher recommended) installed.
 
 ---
 
-## 📝 License & Security
+## License & Security
 
 - This project is open-source and licensed under the **MIT License**.
 - For security practices and vulnerability reporting guidelines, refer to [SECURITY.md](file:///e:/Mygithubprojects/Portfolio/SECURITY.md).

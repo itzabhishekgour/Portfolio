@@ -26,7 +26,7 @@ All notable changes to this project will be documented in this file. The format 
 
 ---
 
-## [1.0.0] - 2026-06-15
+## [1.0.0] - 2023-06-30
 
 ### Added
 - Initial release of the portfolio built with Create React App.
