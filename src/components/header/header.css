@@ -1,152 +1,193 @@
-.header_container h5{
-    margin-top: 2rem;
-}
-header{
-    height: 100vh;
-    padding-top: 7rem;
-    overflow: hidden;
-}
-
-.header_container{
-    text-align: center;
-    height: 100%;
-    position: relative;
+/* ===== Header Section ===== */
+header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  overflow: hidden;
+  position: relative;
 }
 
-
-.header_container{
-    text-align: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+/* Floating orb decorations */
+header::before {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: -100px;
+  right: -200px;
+  background: radial-gradient(circle, rgba(99,102,241,0.1) 0%, transparent 70%);
+  pointer-events: none;
 }
 
-
-
-/* ================cta============ */
-
-.cta{
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 1.2rem;
-    justify-content: center;
+header::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  bottom: -100px;
+  left: -100px;
+  background: radial-gradient(circle, rgba(6,182,212,0.08) 0%, transparent 70%);
+  pointer-events: none;
 }
 
-/* ===================social============== */
-.social{
-   
-    justify-content: center;
-   
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1% 1% 1%;
-    scale: 2;
-    margin-bottom: 4rem;
+.header_container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  position: relative;
+  z-index: 2;
 }
 
-/* ==================img============= */
-
+/* ===== Profile Photo ===== */
 .me {
-    margin-top: 1px;
-    background: linear-gradient(var(--color-primary-variant),transparent);
-    border-radius: 5rem 5rem;
-    bottom: 1rem;
-    overflow: hidden;
-    padding: .5rem;
-    scale: .5;
-    transform: rotate(0deg);
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 2.5rem;
+  flex-shrink: 0;
 }
 
-.me:hover, .me:hover>img {
-
-     transform: rotateY(360deg) rotateZ(180deg);
- }
- 
- .me>img {
-     transition: var(--transition);
- }
-
-.me::before{
-    content: '';
-	z-index: 0;
-	position: absolute;
-	top: -50%;
-	left: -50%;
-	width: 380px;
-	height: 420px;
-	transform-origin: bottom right;
-	background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
-	animation: animate 6s linear infinite;
-}
- .me::after 
-{
-	content: '';
-	z-index: 0;
-	position: absolute;
-	top: -50%;
-	left: -50%;
-	width: 360px;
-	height: 420px;
-	transform-origin: bottom right;
-	background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
-	animation: animate 6s linear infinite;
-	animation-delay: -3s;
-}
-@keyframes animate 
-{
-	0%
-	{
-		transform: rotate(0deg);
-	}
-	100%
-	{
-		transform: rotate(360deg);
-	}
+.me-ring {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: var(--grad-main);
+  animation: rotateGlow 3s linear infinite;
+  z-index: 0;
 }
 
-
-
-.me>img {
-    background: linear-gradient(var(--color-primary), transparent);
-    border-radius: 5rem 5rem 5rem 5rem;
-    inset: 1rem;
-    z-index: 2;
-    position: relative;
-}
-.social.linkedin a{
-    background: var(--color-primary);
+.me-ring::before {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  background: var(--color-bg);
+  border-radius: 50%;
 }
 
+.me > img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 3px solid var(--color-bg);
+  animation: float 6s ease-in-out infinite;
+}
 
-/* ===========================medium=============== */
+/* ===== Header Text ===== */
+.header_tagline {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
 
+.header_name {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  background: var(--grad-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.8rem;
+  -webkit-text-fill-color: unset;
+  color: var(--color-white);
+}
+
+.header_role {
+  font-size: 1.2rem;
+  color: var(--color-light);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.header_role span {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+/* ===== CTA Buttons ===== */
+.cta {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* ===== Social Links ===== */
+.social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(99, 102, 241, 0.3);
+  background: rgba(99, 102, 241, 0.08);
+  color: var(--color-light);
+  font-size: 1.1rem;
+  transition: var(--transition);
+}
+
+.social a:hover {
+  border-color: var(--color-primary);
+  background: rgba(99, 102, 241, 0.2);
+  color: var(--color-white);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+}
+
+/* ===== Scroll Indicator ===== */
+.scroll-down {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: fadeInUp 1s ease 1.5s both;
+}
+
+.scroll-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  animation: float 2s ease-in-out infinite;
+}
+
+/* ===== Responsive ===== */
 @media screen and (max-width: 1024px) {
-   
-    
-    .social{
-   
-        justify-content: center;
-       
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: 2% 2% 2%;
-        scale: 2;
-        margin-bottom: 4rem;
-    }
-   
-    
+  .me { width: 180px; height: 180px; }
 }
 
 @media screen and (max-width: 600px) {
-    header{
-        height: 100vh;
-    }
-
-   
-
-    .me {
-        border-radius: 6rem;
-        scale: .75;
-    }
+  header { padding-top: 4rem; }
+  .me { width: 150px; height: 150px; }
+  .header_name { font-size: 2.2rem; }
+  .cta { flex-direction: column; align-items: center; }
 }

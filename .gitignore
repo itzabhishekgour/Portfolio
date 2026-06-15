@@ -10,6 +10,10 @@
 
 # production
 /build
+/dist
+/dist-ssr
+/out-tsc
+/.svelte-kit
 
 # misc
 .DS_Store

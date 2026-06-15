@@ -1,32 +1,85 @@
-nav{
-    background: rgba(0, 0, 0, 0.3);
-    width: max-content;
-    display: block;
-    padding: 0.7rem 1.7rem;
-    z-index: 2;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 2rem;
-    display: flex;
-    gap: 0.8rem;
-    border-radius: 3rem;
-    backdrop-filter: blur(15px);
-}
-nav a{
-    background: transparent;
-    padding: 0.9rem;
-    border-radius: 50%;
-    display: flex;
-    color: var(--color-light);
-    font-size: 1.1rem;
+nav.glass-nav {
+  background: rgba(10, 15, 30, 0.45);
+  width: max-content;
+  padding: 0.6rem 1.2rem;
+  z-index: 99;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.1);
 }
 
-nav a:hover{
-    background: var(--color-primary);
+nav.glass-nav a {
+  background: transparent;
+  padding: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.2rem;
+  position: relative;
+  transition: color 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
-nav a.active{
-    background: var(--color-primary);
-    color: var(--colour-white);
+nav.glass-nav a:hover {
+  color: var(--color-white);
+}
+
+/* Hover tooltip */
+nav.glass-nav a::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 140%;
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+  background: rgba(10, 15, 30, 0.95);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  color: var(--color-white);
+  padding: 0.3rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+nav.glass-nav a:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+nav.glass-nav a .nav_icon {
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+
+nav.glass-nav a.active {
+  color: var(--color-white);
+}
+
+nav.glass-nav a.active::after {
+  display: none; /* Hide tooltip for active item */
+}
+
+/* Framer Motion Active Background */
+nav.glass-nav .nav_active-bg {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--grad-main);
+  z-index: 1;
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
 }
