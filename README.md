@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Professional Developer Portfolio (v2.0.0)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A high-performance, responsive, and beautifully animated developer portfolio. Built using React 18 and Vite, it showcases my professional engineering journey, technical skillset, and microservices/front-end projects.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌟 Visual & Technical Features
 
-### `npm start`
+- **Cyber-Glassmorphism Theme**: Fully overhauled styling system using modern CSS HSL variables, neon gradient overlays, card glows, and custom floating backgrounds.
+- **Micro-Animations**: Staggered scroll reveals, floating widgets, interactive rating dots, and fluid active-nav pill indicator animations powered by **Framer Motion**.
+- **Responsive Navigation**: Smooth fixed pill-shaped navigation dock with tooltips on hover and layout animations.
+- **Automated Contact Delivery**: Integrated with EmailJS for seamless direct message submissions via the portfolio's secure contact card.
+- **Modern Architecture**: Migrated from legacy Create React App to Vite, resulting in compile speeds under `500ms` and optimized static bundle sizes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack & Tools
 
-### `npm test`
+- **Core Library**: React 18
+- **Build Engine**: Vite 8 (HMR enabled)
+- **Animation Framework**: Framer Motion 12
+- **Styling**: Responsive Vanilla CSS & CSS custom property tokens
+- **Icons**: React Icons (Bs, Bi, Md, Fi)
+- **Deployment**: Automatic static assets bundle production
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📂 Featured Projects in Portfolio
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The portfolio showcases key productions:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **[Interconnecter](https://github.com/itzabhishekgour/InterConnecterReloaded)**: Premium student social network with real-time SockJS WebSocket messaging and user profiles.
+2. **[Alpha-Pay](https://github.com/itzabhishekgour/Alpha-Pay)**: Distributed digital wallet system built with Java 21, Spring Boot microservices, Eureka server discovery, API gateway routing, and Docker Compose.
+3. **[Chitrakosh](https://github.com/itzabhishekgour/Chitrakosh)**: Movie search/discovery SPA using OMDb API featuring debounced auto-complete and persistent local themes.
+4. **[VoxPulse](https://github.com/itzabhishekgour/VoxPulse)**: Lightweight, offline custom wake-word detection library for Python using 2D CNNs and TensorFlow Lite.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 Local Development Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
+Make sure you have Node.js (v18 or higher recommended) installed.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Steps
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/itzabhishekgour/Portfolio.git
+   cd Portfolio
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Install dependency packages:**
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Launch the local development server:**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-## Learn More
+4. **Compile production assets:**
+   ```bash
+   npm run build
+   ```
+   This generates an optimized static bundle in the `dist/` directory.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📝 License & Security
 
-### Code Splitting
+- This project is open-source and licensed under the **MIT License**.
+- For security practices and vulnerability reporting guidelines, refer to [SECURITY.md](file:///e:/Mygithubprojects/Portfolio/SECURITY.md).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Developed by **Abhishek Gour*** — Indore, Madhya Pradesh, India.
